@@ -13,11 +13,12 @@
 </head>
 
 <body>
-    <div class="container-fluid text-center">
+    
+    <div class="container-fluid text-center" style="background-color: #694f4f2c;">
         <h1 class="text-bg-dark py-2 ps-3">VALHALA FESTIVAL</h1>
         <header>
 
-            <h1>Sejam bem-vindo(as) Ao Festival Valhala</h1>
+        
 
 
         </header>
@@ -31,28 +32,80 @@
                 max-width: 100%;
                 height: auto;
             }
+            body {
+            background-image: url('./imagens/paisagem.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        
+
+        .container-fluid {
+            background-color: rgba(105, 79, 79, 0.18); 
+        }
+
+        .text-bg-dark {
+            color: #000; 
+        }
         </style>
         <section class="container">
             <img src="./imagens/VALHALLA_LOGO_BW_long_2023.webp" class="img-fluid" alt="Logo Valhalla">
         </section>
         <aside>
-            <ul>
-                <li><a class="text-decoration-none" href="poemas.html" target="_blank">POEMA NÓRDICO</a></li>
-                <li><a class="text-decoration-none" href="https://www.historiadomundo.com.br/viking" target="_blank">UM
-                        POUCO SOBRE OS VIKINGS </a></li>
-                <li><a class="text-decoration-none">
-                        href="https://revistagalileu.globo.com/Cultura/noticia/2017/12/6-livros-para-quem-curte-e-quer-saber-mais-sobre-os-vikings.html"
-                        target="_blank">AVENTURAS DE GUERREIROS</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    MENU INTERATIVO
+
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="poemas.html">POEMA NÓRDICO</a></li>
+                    <li><a class="dropdown-item" href="https://www.historiadomundo.com.br/viking">UM
+                            POUCO SOBRE OS VIKINGS </a></li>
+                    <li><a class="dropdown-item"
+                            href="https://revistagalileu.globo.com/Cultura/noticia/2017/12/6-livros-para-quem-curte-e-quer-saber-mais-sobre-os-vikings.html">AVENTURAS
+                            DE GUERREIROS</a></li>
+                </ul>
+            </div>
         </aside>
+        <p></p>
         <footer>
-            <span>INFORMAÇÕES</span>
-            <ul>
-                <li><a class="text-decoration-none" href=”https://www.britannica.com/topic/Viking-people”>HISTÓRIA</a>
-                </li>
-                <li><a class="text-decoration-none" href=”https://www.instagram.com/historyvikings/”>INSTAGRAM</a></li>
-                <li><a class="text-decoration-none" href=”https://www.facebook.com/valhallacaieiras/”>FACEBOOK</a></li>
-            </ul>
+
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      
+                      <img src="./imagens/historiacard.jpg" class="card-img-top" alt="Imagem 1">
+                      <div class="card-body">
+                        <h5 class="card-title"><a class="text-decoration-none" href="https://www.britannica.com/topic/Viking-people">HISTÓRIA</a></h5>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-4">
+                    <div class="card">
+                      
+                      <img src="./imagens/Design sem nome.png" class="card-img-top" alt="Imagem 2">
+                      <div class="card-body">
+                        <h5 class="card-title"><a class="text-decoration-none" href="https://www.instagram.com/historyvikings/">INSTAGRAM</a></h5>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-4">
+                    <div class="card">
+                      
+                      <img src="./imagens/barcaieiras.jpg" class="card-img-top" alt="Imagem 3">
+                      <div class="card-body">
+                        <h5 class="card-title"><a class="text-decoration-none" href="https://www.facebook.com/valhallacaieiras/">FACEBOOK</a></h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
         </footer>
     </div>
 </body>
