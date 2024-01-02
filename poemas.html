@@ -23,11 +23,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #af45452c;
             margin: 0;
             background-image: url('./imagens/fundopoemas.webp');
             background-size: cover;
+        }
+
+        /* Additional styles for better mobile experience */
+        @media (max-width: 576px) {
+            body {
+                background-size: auto; /* Adjust background size for smaller screens */
+            }
         }
     </style>
 </head>
